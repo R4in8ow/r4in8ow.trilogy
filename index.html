@@ -3,28 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Movie Site</title>
+  <meta name="description" content="R4in8ow Trilogy" />
+  <!-- Basic CSP (သင့်ဟို့တင်ပေါ်မူတည်) -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 img-src 'self' data: https:;
+                 style-src 'self' 'unsafe-inline';
+                 script-src 'self';
+                 frame-src https://drive.google.com;
+                 connect-src 'self';
+                 object-src 'none';" />
+  <title>R4in8ow Trilogy</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="container">
-    <h1>🎬 r4in8ow Trilogy </h1>
-    <input id="search" type="search" placeholder="ရှာရန် (ခေါင်းစဉ်)..." />
-  </header>
-
-  <main class="container">
-    <div id="playerWrap" class="player-wrap hidden">
-      <iframe id="player" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <button id="closePlayer" class="close-btn">ပိတ်</button>
-    </div>
-
-    <div id="grid" class="grid"></div>
-  </main>
-
-  <footer class="container foot">
-    <small> အားလုံးပျော်ရွှင်ချမ်းမြေကြပါစေခင်ဗျာ </small>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <!-- (နောက်ကျနေတဲ့ HTML အတူတူ) -->
